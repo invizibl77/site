@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>СОВА СКАЗАЛА | МЕДИА - Закрытый канал</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            /* Скрываем скроллбар для эстетики мобильного приложения */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        /* Плавная анимация для кнопки */
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        }
+        .btn-pulse {
+            animation: pulse-soft 2s infinite;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased min-h-screen flex flex-col relative pb-24">
+
+    <!-- Фоновый баннер (уменьшена высота для мобилок) -->
+    <div class="absolute top-0 left-0 w-full h-[350px] bg-cover bg-center z-0" style="background-image: url('https://raw.githubusercontent.com/invizibl77/image/main/совабаннер2000.png');">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-[#f3f4f6]"></div>
+    </div>
+
+    <!-- Основной контейнер (Суженный, для максимальной конверсии) -->
+    <div class="max-w-md w-full mx-auto px-4 pt-24 relative z-10 flex-grow flex flex-col items-center">
+
+        <!-- ГЛАВНАЯ КАРТОЧКА-ПРОФИЛЬ -->
+        <div class="glass-card w-full rounded-[32px] p-6 sm:p-8 shadow-2xl border border-white/50 relative text-center mt-10">
+            
+            <!-- Аватарка/Лого (вылезает за край для стиля) -->
+            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-blue-600 to-purple-600 p-1 shadow-lg">
+                    <div class="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+                        <!-- Пользовательская иконка/логотип -->
+                        <img src="https://raw.githubusercontent.com/invizibl77/image/main/иконка.png" alt="Логотип канала" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 mb-2">
+                <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Авторский канал</span>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl font-extrabold mb-3 text-gray-900 leading-tight">
+                СОВА СКАЗАЛА | МЕДИА
+            </h1>
+            
+            <p class="text-gray-600 text-sm sm:text-base font-medium mb-6 px-2">
+                Главный инсайдерский канал для авторов, медиаменеджеров и бизнеса в MAX.
+            </p>
+
+            <!-- Блок-крючок (Зачем переходить прямо сейчас) -->
+            <div class="bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100 rounded-2xl p-4 mb-6 text-left shadow-inner">
+                <div class="flex items-start gap-3">
+                    <!-- Заменил эмодзи подарка на SVG иконку -->
+                    <div class="shrink-0 mt-1">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-gray-900">Подарок в закрепе:</p>
+                        <p class="text-xs text-gray-600 mt-1">Пошаговый план: как запустить свой канал в MAX с нуля и не наделать ошибок.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Буллиты (Сетка, быстро читается) -->
+            <div class="grid grid-cols-2 gap-3 text-left mb-5">
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                    <svg class="w-6 h-6 text-blue-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <span class="text-xs font-semibold text-gray-800 leading-tight">Разборы механик и апдейтов</span>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                    <svg class="w-6 h-6 text-blue-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    <span class="text-xs font-semibold text-gray-800 leading-tight">Контент-хаки для роста</span>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                    <svg class="w-6 h-6 text-blue-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                    <span class="text-xs font-semibold text-gray-800 leading-tight">Законы и маркировка</span>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-3 border border-gray-100">
+                    <svg class="w-6 h-6 text-blue-500 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path></svg>
+                    <span class="text-xs font-semibold text-gray-800 leading-tight">Новости медиа без воды</span>
+                </div>
+            </div>
+
+            <!-- Преимущества (Блок-мотиватор перед кнопкой) -->
+            <div class="text-left mb-8 bg-white/60 rounded-2xl p-4 border border-gray-100 shadow-sm">
+                <p class="text-[13px] font-extrabold text-gray-800 mb-3 uppercase tracking-wide text-center">Почему стоит подписаться:</p>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 leading-snug">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span><strong class="font-semibold text-gray-900">Экономия времени:</strong> без недель тестов вслепую</span>
+                    </li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 leading-snug">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span><strong class="font-semibold text-gray-900">Понимание логики</strong> работы в MAX</span>
+                    </li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 leading-snug">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Избегание <strong class="font-semibold text-gray-900">типовых ошибок</strong> новичков</span>
+                    </li>
+                    <li class="flex items-start gap-2.5 text-sm text-gray-700 leading-snug">
+                        <svg class="w-5 h-5 text-blue-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Платформа <strong class="font-semibold text-gray-900">глазами профессионалов</strong></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ГЛАВНАЯ КНОПКА -->
+            <a href="https://max.ru/id281784219294_biz" class="btn-pulse w-full flex items-center justify-center bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-6 rounded-2xl shadow-xl transition-all duration-300">
+                <div class="mr-3 bg-white/20 rounded-full p-1.5 flex items-center justify-center">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="9" stroke="white" stroke-width="3" />
+                        <path d="M10 8L16 12L10 16V8Z" fill="white"/> <!-- Иконка Play/Входа -->
+                    </svg>
+                </div>
+                <span class="text-lg">Перейти в канал</span>
+            </a>
+            
+            <p class="text-xs text-gray-400 mt-3 flex justify-center items-center gap-1">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                Откроется в приложении MAX
+            </p>
+        </div>
+
+        <!-- Мини-социальное доказательство под карточкой (используем ваши картинки) -->
+        <div class="w-full mt-8 text-center">
+            <p class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4">Нас уже читают</p>
+            <div class="flex justify-center -space-x-4">
+                <img class="w-12 h-12 rounded-full border-4 border-[#f3f4f6] object-cover" src="https://raw.githubusercontent.com/invizibl77/image/main/100.png" alt="User">
+                <img class="w-12 h-12 rounded-full border-4 border-[#f3f4f6] object-cover" src="https://raw.githubusercontent.com/invizibl77/image/main/200.png" alt="User">
+                <img class="w-12 h-12 rounded-full border-4 border-[#f3f4f6] object-cover" src="https://raw.githubusercontent.com/invizibl77/image/main/300.png" alt="User">
+                <div class="w-12 h-12 rounded-full border-4 border-[#f3f4f6] bg-gray-200 flex items-center justify-center text-xs font-bold text-gray-600">
+                    +1k
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Плавающая кнопка (Sticky Button) -->
+    <div class="fixed bottom-6 left-0 w-full flex justify-center z-50 px-4 pointer-events-none">
+        <a href="https://max.ru/id281784219294_biz" class="pointer-events-auto flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3.5 px-8 rounded-full shadow-[0_10px_25px_-5px_rgba(37,99,235,0.4)] transform hover:scale-105 transition-all duration-300 border border-white/20 backdrop-blur-sm">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            <span>В канал</span>
+        </a>
+    </div>
+
+</body>
+</html>
